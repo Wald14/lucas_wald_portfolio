@@ -26,7 +26,7 @@ export default function Portfolio() {
     githubLink: "https://github.com/mollydotwhat/mvc-armory",
     deployedLink: "https://mvc-armory-project-3cbd4054ef3a.herokuapp.com/",
     techStack: "HTML / CSS / JavaScript / MySQL / Express / Sequelize / Handlebars / Bcrypt",
-    description: "This was the second of three group projects from a coding bootcamp I took. For this project, I was the project manager. This project features an web applciation where the user can build an optimum character loadout. It features a drag and drop application where the user can drag various gear and weapons onto their character. Upon doing so, the characters stats are dynamically updated via JavaScript."
+    description: "This was the second of three group projects, where I was the project manager. This is a web applciation where the user can build a character loadout. It features a drag and drop application where the user can drag various gear onto their character. Upon doing so, the characters stats are dynamically updated."
   })
 
   return (
@@ -37,7 +37,7 @@ export default function Portfolio() {
         backgroundSize: "cover"
       }}>
         <ProjectInfo index={index} setIndex={setIndex} projectData={projectData} setProjectData={setProjectData}/>
-        <Carousel index={index} setIndex={setIndex} bgImage={bgImage} setBgImage={setBgImage}/>
+        <Carousel index={index} setIndex={setIndex} bgImage={bgImage} setBgImage={setBgImage} projectData={projectData} setProjectData={setProjectData}/>
       </div>
     </>
   );

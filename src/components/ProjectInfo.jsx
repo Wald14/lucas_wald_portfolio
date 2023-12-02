@@ -13,19 +13,11 @@ export default function ProjectInfo(props) {
         <a href={props.projectData.deployedLink} target="_blank">
           <img src="/assets/icons/web-icon.png" />
         </a>
-        <span>
+        <p>
           {props.projectData.techStack}
-        </span>
+        </p>
       </div>
       <p className="project-info-description">{props.projectData.description}</p>
-      {/* <div className="project-info-links">
-        <a href="https://www.github.com/wald14" target="_blank">
-          <img src="/assets/icons/github-mark-white.png" />
-        </a>
-        <a href="https://github.com/wald14" target="_blank">
-          <img src="/assets/icons/web-icon.png" />
-        </a>
-      </div> */}
     </div>
   );
 };
