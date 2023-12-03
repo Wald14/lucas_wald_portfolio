@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from './components/Header'
 import AboutMe from './components/AboutMe'
 import Portfolio from './components/Portfolio'
+import Resume from './components/Resume'
 import Footer from './components/Footer'
 
 // import bootstrap css
@@ -21,6 +22,7 @@ function App() {
 
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
 
           </Routes>
         </BrowserRouter>

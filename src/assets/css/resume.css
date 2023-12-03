@@ -1,0 +1,18 @@
+.resumePage-resume {
+  max-width: 700px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.resumePage-tech-stack {
+  margin: 20px;
+  font-family: 'Acme', sans-serif;
+}
+
+.resumePage-tech-stack p {
+  font-size: 28px;
+}
+
+.resumePage-tech-stack ul {
+  font-size: 20px;
+}
