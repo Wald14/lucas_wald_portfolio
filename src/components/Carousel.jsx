@@ -4,10 +4,6 @@ import { useState, useEffect } from 'react';
 
 
 export default function Carousel(props) {
-  // Props
-  // [index, setIndex] -> Slide index tracker
-  // [bgImage, setBgImage] -> Background Image Setter
-
   // ------------------------------------------------------------
   //  Handles which background should be returned based off index
   // ------------------------------------------------------------
@@ -111,7 +107,6 @@ export default function Carousel(props) {
       setShift(shift - 110);
       props.setIndex(props.index + 1)
     }
-    console.log(props.index)
   }
 
   // Retreat slides
