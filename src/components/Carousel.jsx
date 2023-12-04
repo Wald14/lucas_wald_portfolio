@@ -18,7 +18,7 @@ export default function Carousel(props) {
           githubLink: "https://github.com/mollydotwhat/mvc-armory",
           deployedLink: "https://mvc-armory-project-3cbd4054ef3a.herokuapp.com/",
           techStack: "MySQL / Handlebars / JavaScript / HTML / CSS",
-          description: "This was the second of three group projects, where I was the project manager. This is a web applciation where the user can build a character loadout. It features a drag and drop application where the user can drag various gear onto their character. Upon doing so, the characters stats are dynamically updated."
+          description: "This was the second of three group projects, where I was the project manager. This is a web application where the user can build a character loadout. It features a drag and drop application where the user can drag various gear onto their character. Upon doing so, the characters stats are dynamically updated."
         })
         break;
       case 1:
@@ -29,7 +29,7 @@ export default function Carousel(props) {
           githubLink: "https://github.com/Matt0Stark/cocktail_generator",
           deployedLink: "https://matt0stark.github.io/cocktail_generator/",
           techStack: "API / JavaScript / HTML / CSS",
-          description: "This was the first of three group projects. This is a cocktail generator web application. After verifying they are 21, the user has the option to either search by a drink's name or up to 3 ingredients. The user may save their favorite's to the browser's local storage"
+          description: "This was the first of three group projects. This is a cocktail generator web application. After verifying they are 21, the user has the option to either search by a drink's name or up to 3 ingredients. The user may save their favorites to the browser's local storage."
         })
         break;
       case 2:
@@ -62,7 +62,7 @@ export default function Carousel(props) {
           githubLink: "https://github.com/Wald14/weather-dashboard",
           deployedLink: "https://wald14.github.io/weather-dashboard/",
           techStack: "Local Storage / API / JavaScript / HTML / CSS",
-          description: "This was a homework assignment from bootcamp. It is a weather dashboard application. The user may search for a city to get the current weather and the 5-day forecast fr that city. The city is saved to their search history via local storage, which the user can clear at any point."
+          description: "This was a homework assignment from bootcamp. It is a weather dashboard application. The user may search for a city to get the current weather and the 5-day forecast for that city. The city is saved to their search history via local storage, which the user can clear at any point."
         })
         break;
       case 5:
@@ -73,7 +73,7 @@ export default function Carousel(props) {
           githubLink: "https://github.com/Wald14/e-commerce_back_end",
           deployedLink: "",
           techStack: "MySQL / JavaScript / HTML / CSS",
-          description: "This was a homework assignment from bootcamp. This application allows the user to have a back end for their e-commerce website. They can manage product categories, products, and tags via API REST (Representational state transfer) fetch calls"
+          description: "This was a homework assignment from bootcamp. This application allows the user to have a back end for their e-commerce website. They can manage product categories, products, and tags via API REST (Representational state transfer) fetch calls."
         })
         break;
     }

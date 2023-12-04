@@ -1,3 +1,16 @@
+.aboutMe-page {
+  background-image: url("/assets/images/ria-oZzoDW61aoM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  min-height: 800px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .headshot {
   width: 100px;
   margin: 20px 20px 0px 20px;
@@ -19,19 +32,42 @@
   margin: 0px;
 }
 
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-me-info p {
   font-size: 18px;
   margin: 12px 10px;
-}
-
-.aboutMe-list {
-  padding-top: 20px;
-  text-decoration: underline;
-  font-family: 'Acme', sans-serif;
+  width: 50%;
 }
 
 ul {
   list-style-type: circle;
   margin-left: 20px;
   font-family: 'Acme', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .about-me-info p {
+    width: 75%;
+  }
+
+  .aboutMe-page {
+    min-height: 900px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-me-info p {
+    font-size: 16px;
+    width: 98%
+  }
+
+  .aboutMe-page {
+    min-height: 1200px;
+  }
+
 }

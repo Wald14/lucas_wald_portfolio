@@ -9,6 +9,8 @@ import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import "./assets/css/footer.css"
+
 // import bootstrap css
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -5,8 +5,7 @@ Project Info RELATED CSS
 */
 .project-info {
   height: 45vh;
-  min-height: 450px;
-  width: 50%;
+  min-height: 350px;
   padding: 2%;
   display: flex;
   flex-direction: column;
@@ -39,6 +38,7 @@ Project Info RELATED CSS
 }
 
 .project-info-description {
+  width: 60%;
   font-size: 20px;
   text-shadow: 1px 1px 4px black, 1px -1px 4px black, -1px -1px 4px black, -1px 1px 4px black;
 }
@@ -52,9 +52,7 @@ CAROUSEL RELATED CSS
 .carousel {
   height: 40vh;
   min-height: 300px;
-  /* height: 350px; */
   display: grid;
-  /* set to "end" to place in bottom right of slider */
   place-items: end;
 }
 
@@ -93,7 +91,7 @@ CAROUSEL RELATED CSS
   box-shadow: 2px 2px 10px black;
 }
 
-.slide-title{
+.slide-title {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -111,7 +109,7 @@ CAROUSEL RELATED CSS
   border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: solid white 1px;
   font-size: 25px;
   color: white
@@ -122,37 +120,63 @@ CAROUSEL RELATED CSS
 }
 
 .btn-prev {
-  left: 1%;
+  left: 0px;
 }
 
 .btn-next {
-  left: 15%;
+  left: 100px;
 }
 
 
-/* .slide {
-  height: 18rem;
-  width: 14rem;
-  border-radius: 0.25rem;
-  border: 0.02rem solid grey;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media screen and (max-width: 992px) {
+  .project-info {
+    height: 400px
+  }
 
-  position: relative;
+  .project-info-links p {
+    font-size: 14px;
+  }
 
 }
 
-.slide-title  {
-  font-size: 2rem;
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  font-family: "Acme", sans-serif;
-} */
 
-/* Set carousel to be at bottom right of screen */
-/* .carousel-container {
-  min-width: 28rem;
-  position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-} */
+
+@media screen and (max-width: 768px) {
+  .project-info-description {
+    font-size: 16px;
+    margin-right: 10px;
+    width: 75%;
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .project-info {
+    height: auto;
+    justify-content: start;
+  }
+  .project-info-title {
+    font-size: 50px;
+  }
+
+  .project-info-description {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .slide-holder {
+    visibility: hidden;
+  }
+
+
+  .carousel {
+    height: 60px;
+  }
+
+  .slide-holder {
+    height: 0px;
+  }
+  
+
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
+import "../assets/css/contact.css"
 
 
 export default function Contact() {
@@ -41,8 +42,8 @@ export default function Contact() {
 
 
   return (
-    <>
-      <h1 style={{ margin: "25px" }} >Contact Me:</h1>
+    <div className="contact-page">
+      <h1>Contact Me:</h1>
 
       <Form noValidate validated={validated} onSubmit={handleSubmit} style={{ maxWidth: "500px", margin: "25px" }}>
 
@@ -94,6 +95,6 @@ export default function Contact() {
         </Button>
       </Form>
 
-    </>
+    </div>
   )
 }

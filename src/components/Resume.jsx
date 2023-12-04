@@ -24,7 +24,7 @@ export default function Resume() {
   const handleClick = () => setLoading(true);
 
   return (
-    <div >
+    <div className="resume-page">
       <div className="resumePage-resume">
         <p>
           <span style={{textDecoration: "underline", fontWeight: "bold"}}>Note:</span> My resume is currently being update to reflect what I have learned in Bootcamp. For now the download button will download a placeholder pdf.</p>

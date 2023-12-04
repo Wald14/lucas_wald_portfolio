@@ -10,9 +10,11 @@ export default function ProjectInfo(props) {
         <a href={props.projectData.githubLink} target="_blank">
           <img src="/assets/icons/github-mark-white.png" />
         </a>
+        {props.projectData.deployedLink && 
         <a href={props.projectData.deployedLink} target="_blank">
           <img src="/assets/icons/web-icon.png" />
         </a>
+        }
         <p>
           {props.projectData.techStack}
         </p>

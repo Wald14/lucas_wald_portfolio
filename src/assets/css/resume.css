@@ -1,6 +1,14 @@
+.resume-page {
+  background-image: url("/assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  min-height: 500px;
+}
+
 .resumePage-resume {
   max-width: 700px;
-  margin: 20px;
+  padding: 20px;
   font-size: 20px;
 }
 
@@ -15,4 +23,11 @@
 
 .resumePage-tech-stack ul {
   font-size: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .resume-page {
+    min-height: 650px;
+  }
+
 }
