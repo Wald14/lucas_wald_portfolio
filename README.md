@@ -17,7 +17,7 @@ Upon arriving to the webpage the user is presented a navigation bar that will ta
 The About Me page tells employeers a little bit about my coding and work history.
 
 ### Lucas Wald's Portfolio
-The Portfolio showes off 6 of my top projects. 
+The Portfolio showes off 6 of my top projects. The site can be accessed by here: [Luke Wald's Portfolio](https://luke-wald-portfolio.netlify.app/)
 
 If on a tablet or computer, the user will be presented with a carousel with each project having it's own slide. The user can either use the navigation buttons to advance to the next or prevous project. Additionally, the user can click on a slide and the carousel will advance to that slides web component. As the user advances through the carousel, they'll be presented with that projects information. This includes a header, background on the project, tech stack used, link to GitHub repository, and deployed application. NOTE: For back end projects, there is no deployed application so this icon disappears as an option to click.
 
