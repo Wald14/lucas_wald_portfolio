@@ -10,7 +10,7 @@ export default function AboutMe() {
       <Row>
         <div className="aboutMe-top-container">
           <img className="headshot" src="/assets/images/lukewald-headshot.jpg" alt="Headshot photo of Luke Wald" />
-          <h2>About Me:</h2>
+          <h1>About Me:</h1>
         </div>
       </Row>
       <Row>

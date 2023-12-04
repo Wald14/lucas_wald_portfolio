@@ -1,4 +1,3 @@
-// https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/
 // https://bobbyhadz.com/blog/react-download-file
 
 import resumePDF from '../assets/pdf/resumePlaceholder.pdf'
