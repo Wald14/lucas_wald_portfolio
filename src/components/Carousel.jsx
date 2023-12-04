@@ -124,6 +124,13 @@ export default function Carousel(props) {
     }
   }
 
+  const handleSlideClick = (e) => {
+    const newShift = Number(e.currentTarget.getAttribute("slide_final_shift"))
+    const newIndex = Number(e.currentTarget.getAttribute("slide_index"))
+    setShift(newShift)
+    props.setIndex(newIndex)
+  }
+
   useEffect(() => {
     updateBackground()
   }, [props.index])
@@ -134,7 +141,7 @@ export default function Carousel(props) {
         {/* Slides Div*/}
         <div className="slide-holder">
           {/* First Slide */}
-          <div className="slide" style={{ transform: `translateX(${shift}%)` }}>
+          <div className="slide" style={{ transform: `translateX(${shift}%)` }} slide_index={1} slide_final_shift={-110} onClick={handleSlideClick}>
             <img
               src="/assets/images/tomas-jasovsky-ZLZ88BR5NTk-unsplash.jpg"
               alt="medieval chest armor"
@@ -143,7 +150,7 @@ export default function Carousel(props) {
           </div>
 
           {/* Second Slide */}
-          <div className="slide" style={{ transform: `translateX(${shift + 110}%)` }}>
+          <div className="slide" style={{ transform: `translateX(${shift + 110}%)`}} slide_index={2} slide_final_shift={-220} onClick={handleSlideClick}>
             <img
               src="/assets/images/thought-catalog-UK78i6vK3sc-unsplash.jpg"
               alt="a cocktail"
@@ -152,7 +159,7 @@ export default function Carousel(props) {
           </div>
 
           {/* Third Slide */}
-          <div className="slide" style={{ transform: `translateX(${shift + 220}%)` }}>
+          <div className="slide" style={{ transform: `translateX(${shift + 220}%)` }} slide_index={3} slide_final_shift={-330} onClick={handleSlideClick}>
             <img
               src="/assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg"
               alt=""
@@ -161,7 +168,7 @@ export default function Carousel(props) {
           </div>
 
           {/* Fourth Slide */}
-          <div className="slide other4" style={{ transform: `translateX(${shift + 330}%)` }}>
+          <div className="slide other4" style={{ transform: `translateX(${shift + 330}%)` }} slide_index={4} slide_final_shift={-440} onClick={handleSlideClick}>
             <img
               src="/assets/images/johannes-plenio-600dw3-1rv4-unsplash.jpg"
               alt=""
@@ -170,7 +177,7 @@ export default function Carousel(props) {
           </div>
 
           {/* Fifth Slide */}
-          <div className="slide other5" style={{ transform: `translateX(${shift + 440}%)` }}>
+          <div className="slide other5" style={{ transform: `translateX(${shift + 440}%)` }} slide_index={5} slide_final_shift={-550} onClick={handleSlideClick}>
             <img
               src="/assets/images/clark-young-ueZXMrZFFKQ-unsplash.jpg"
               alt=""
@@ -179,7 +186,7 @@ export default function Carousel(props) {
           </div>
 
           {/* Sixth Slide */}
-          <div className="slide other6" style={{ transform: `translateX(${shift + 550}%)` }}>
+          <div className="slide other6" style={{ transform: `translateX(${shift + 550}%)` }} slide_index={0} slide_final_shift={0} onClick={handleSlideClick}>
             <img
               src="/assets/images/nik-shuliahin-JOzv_pAkcMk-unsplash.jpg"
               alt=""
