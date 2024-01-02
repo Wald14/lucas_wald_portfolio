@@ -11,6 +11,17 @@ export default function Carousel(props) {
   function updateBackground() {
     switch (props.index) {
       case 0:
+        // image from 7th slide
+        props.setBgImage("northfolk-Ts0g6PHe1q0-unsplash.jpg")
+        props.setProjectData({
+          title: "Giftify",
+          githubLink: "https://github.com/GrantMitchell24/gift-guide",
+          deployedLink: "https://gift-guide-020589889d66.herokuapp.com/",
+          techStack: "MERN Stack",
+          description: "This was the final group project. Giftify allows the user to make a wish-list of items they'd like to receive. This app allows the purchaser to buy with confidence as they can mark if the gift has been purchased or not, eliminating the risk of duplicate gifts. The list owner cannot see if it's been purchased. Users can form groups to help keep their family and friends organized."
+        })
+        break;
+      case 1:
         // image from last slide
         props.setBgImage("nik-shuliahin-JOzv_pAkcMk-unsplash.jpg")
         props.setProjectData({
@@ -21,7 +32,7 @@ export default function Carousel(props) {
           description: "This was the second of three group projects, where I was the project manager. This is a web application where the user can build a character loadout. It features a drag and drop application where the user can drag various gear onto their character. Upon doing so, the characters stats are dynamically updated."
         })
         break;
-      case 1:
+      case 2:
         // image from 1st slide
         props.setBgImage("tomas-jasovsky-ZLZ88BR5NTk-unsplash.jpg")
         props.setProjectData({
@@ -32,7 +43,7 @@ export default function Carousel(props) {
           description: "This was the first of three group projects. This is a cocktail generator web application. After verifying they are 21, the user has the option to either search by a drink's name or up to 3 ingredients. The user may save their favorites to the browser's local storage."
         })
         break;
-      case 2:
+      case 3:
         // image from 2nd slide
         props.setBgImage("thought-catalog-UK78i6vK3sc-unsplash.jpg")
         props.setProjectData({
@@ -43,7 +54,7 @@ export default function Carousel(props) {
           description: "This was a MVC (Model-View-Controller) homework assignment from bootcamp. It is a blog site where the users can login, write blogs, and comment on other user's blogs."
         })
         break;
-      case 3:
+      case 4:
         // image from 3rd slide
         props.setBgImage("nasa-Q1p7bh3SHj8-unsplash.jpg")
         props.setProjectData({
@@ -54,7 +65,7 @@ export default function Carousel(props) {
           description: "This was a homework assignment from bootcamp. This is an API for an user's social network that uses a NoSQL database, allowing the user's site to handle large amounts of unstructured data."
         })
         break;
-      case 4:
+      case 5:
         // image from 4th slide
         props.setBgImage("johannes-plenio-600dw3-1rv4-unsplash.jpg")
         props.setProjectData({
@@ -65,7 +76,7 @@ export default function Carousel(props) {
           description: "This was a homework assignment from bootcamp. It is a weather dashboard application. The user may search for a city to get the current weather and the 5-day forecast for that city. The city is saved to their search history via local storage, which the user can clear at any point."
         })
         break;
-      case 5:
+      case 6:
         // image from 5th slide
         props.setBgImage("clark-young-ueZXMrZFFKQ-unsplash.jpg")
         props.setProjectData({
@@ -86,7 +97,7 @@ export default function Carousel(props) {
   const [shift, setShift] = useState(0)
 
   // UPDATE IF ADDING OR REMOVING SLIDES
-  const numOfSlides = 6;
+  const numOfSlides = 7;
 
   // Converts slide number to a value that can be used as a percentage for translateX
   const slideAdj = ((numOfSlides - 1) * 110);
@@ -140,8 +151,18 @@ export default function Carousel(props) {
       <div className="slider">
         {/* Slides Div*/}
         <div className="slide-holder">
-          {/* First Slide */}
+
+          {/* 1st Slide */}
           <div className="slide" style={{ transform: `translateX(${shift}%)` }} slide_index={1} slide_final_shift={-110} onClick={handleSlideClick}>
+            <img
+              src="/assets/images/nik-shuliahin-JOzv_pAkcMk-unsplash.jpg"
+              alt=""
+            />
+            <h2 className="slide-title">ARMORY</h2>
+          </div>
+
+          {/* 2nd Slide */}
+          <div className="slide" style={{ transform: `translateX(${shift + 110}%)` }} slide_index={2} slide_final_shift={-220} onClick={handleSlideClick}>
             <img
               src="/assets/images/tomas-jasovsky-ZLZ88BR5NTk-unsplash.jpg"
               alt="medieval chest armor"
@@ -149,8 +170,8 @@ export default function Carousel(props) {
             <h2 className="slide-title">COCKTAIL GENERATOR</h2>
           </div>
 
-          {/* Second Slide */}
-          <div className="slide" style={{ transform: `translateX(${shift + 110}%)`}} slide_index={2} slide_final_shift={-220} onClick={handleSlideClick}>
+          {/* 3rd Slide */}
+          <div className="slide" style={{ transform: `translateX(${shift + 220}%)` }} slide_index={3} slide_final_shift={-330} onClick={handleSlideClick}>
             <img
               src="/assets/images/thought-catalog-UK78i6vK3sc-unsplash.jpg"
               alt="a cocktail"
@@ -158,8 +179,8 @@ export default function Carousel(props) {
             <h2 className="slide-title">TECH BLOG</h2>
           </div>
 
-          {/* Third Slide */}
-          <div className="slide" style={{ transform: `translateX(${shift + 220}%)` }} slide_index={3} slide_final_shift={-330} onClick={handleSlideClick}>
+          {/* 4th Slide */}
+          <div className="slide" style={{ transform: `translateX(${shift + 330}%)` }} slide_index={4} slide_final_shift={-440} onClick={handleSlideClick}>
             <img
               src="/assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg"
               alt=""
@@ -167,8 +188,8 @@ export default function Carousel(props) {
             <h2 className="slide-title">SOCIAL MEDIA BACKEND</h2>
           </div>
 
-          {/* Fourth Slide */}
-          <div className="slide other4" style={{ transform: `translateX(${shift + 330}%)` }} slide_index={4} slide_final_shift={-440} onClick={handleSlideClick}>
+          {/* 5th Slide */}
+          <div className="slide" style={{ transform: `translateX(${shift + 440}%)` }} slide_index={5} slide_final_shift={-550} onClick={handleSlideClick}>
             <img
               src="/assets/images/johannes-plenio-600dw3-1rv4-unsplash.jpg"
               alt=""
@@ -176,8 +197,8 @@ export default function Carousel(props) {
             <h2 className="slide-title">WEATHER APP</h2>
           </div>
 
-          {/* Fifth Slide */}
-          <div className="slide other5" style={{ transform: `translateX(${shift + 440}%)` }} slide_index={5} slide_final_shift={-550} onClick={handleSlideClick}>
+          {/* 6th Slide */}
+          <div className="slide" style={{ transform: `translateX(${shift + 550}%)` }} slide_index={6} slide_final_shift={-660} onClick={handleSlideClick}>
             <img
               src="/assets/images/clark-young-ueZXMrZFFKQ-unsplash.jpg"
               alt=""
@@ -185,13 +206,13 @@ export default function Carousel(props) {
             <h2 className="slide-title">E-COMMERCE BACKEND</h2>
           </div>
 
-          {/* Sixth Slide */}
-          <div className="slide other6" style={{ transform: `translateX(${shift + 550}%)` }} slide_index={0} slide_final_shift={0} onClick={handleSlideClick}>
+          {/* 7th Slide */}
+          <div className="slide" style={{ transform: `translateX(${shift + 660}%)` }} slide_index={0} slide_final_shift={0} onClick={handleSlideClick}>
             <img
-              src="/assets/images/nik-shuliahin-JOzv_pAkcMk-unsplash.jpg"
+              src="/assets/images/northfolk-Ts0g6PHe1q0-unsplash.jpg"
               alt=""
             />
-            <h2 className="slide-title">ARMORY</h2>
+            <h2 className="slide-title">Giftify</h2>
           </div>
         </div>
 

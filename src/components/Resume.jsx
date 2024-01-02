@@ -1,6 +1,6 @@
 // https://bobbyhadz.com/blog/react-download-file
 
-import resumePDF from '../assets/pdf/resumePlaceholder.pdf'
+import resumePDF from '../assets/pdf/luke_wald_resume_2024.pdf'
 import '../assets/css/resume.css'
 import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -26,8 +26,6 @@ export default function Resume() {
   return (
     <div className="resume-page">
       <div className="resumePage-resume">
-        <p>
-          <span style={{textDecoration: "underline", fontWeight: "bold"}}>Note:</span> My resume is currently being update to reflect what I have learned in Bootcamp. For now the download button will download a placeholder pdf.</p>
         <a
           href={resumePDF}
           download="luke_wald_resume"
@@ -35,7 +33,7 @@ export default function Resume() {
           rel="noreferrer"
         >
           <Button
-            variant="secondary"
+            variant="success"
             disabled={isLoading}
             onClick={!isLoading ? handleClick : null}
           >Download Resume</Button>
