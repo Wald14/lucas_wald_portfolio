@@ -2,8 +2,8 @@
   background-image: url("/assets/images/ria-oZzoDW61aoM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
-  min-height: 800px;
+  height: auto;
+  min-height: 85vh;
   padding: 25px;
   display: flex;
   flex-direction: column;
