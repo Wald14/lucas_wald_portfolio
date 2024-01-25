@@ -12,7 +12,8 @@ export default function ProjectInfo(props) {
         </a>
         {props.projectData.deployedLink && 
         <a href={props.projectData.deployedLink} target="_blank">
-          <img src="/assets/icons/web-icon.png" />
+          <img src="/assets/icons/external-link-2-32.png" />
+          {/* <img src="/assets/icons/web-icon.png" /> */}
         </a>
         }
         <p>
