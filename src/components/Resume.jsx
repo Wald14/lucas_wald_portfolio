@@ -44,7 +44,7 @@ export default function Resume() {
         <ul>
           <li>HTML</li>
           <li>CSS / Bootstrap</li>
-          <li>JavaScript / JQuery / JSON</li>
+          <li>JavaScript / TypeScript / JQuery / JSON</li>
           <li>React</li>
           <li>MongoDb/Mongoose</li>
           <li>MySQL/Sequelize</li>
